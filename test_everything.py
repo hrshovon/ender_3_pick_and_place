@@ -21,6 +21,7 @@ def get_usnpwd(json_path):
 
 
 def main():
+    get_usnpwd(fn)
     printer_handler = ender_controller(printer_port)
     magnet_handler = magnet_switch_controller(host,port,username,password,topic)
     magnet_handler.init_switch_srv()
